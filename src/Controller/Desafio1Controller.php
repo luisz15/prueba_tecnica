@@ -18,6 +18,7 @@ class Desafio1Controller extends AbstractController
         $form = $this -> createFormBuilder()
             -> add('initNumber', NumberType::class, [
                 'constraints' => new Assert\Positive()
+                , 'label_format' => 'Starting number'
             ])
             -> add('Ejecutar', SubmitType::class)
             -> getForm();

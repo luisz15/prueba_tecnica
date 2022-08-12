@@ -4,8 +4,19 @@
 
 {% block body %}
 
-    {{form(inputForm)}}
-
-    {{desafio1_fizzbuzz(initNumber)}}
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="row">
+                <div class="col-4">
+                    {{form(inputForm)}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    {{desafio1_fizzbuzz(initNumber)}}
+                </div>
+            </div>
+        </div>
+    </div>
 
 {% endblock %}

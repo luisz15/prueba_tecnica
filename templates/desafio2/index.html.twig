@@ -4,7 +4,19 @@
 
 {% block body %}
 
-    {{form(formFizzBuzz)}}
-    {{fizzBuzz}}
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="row">
+                <div class="col-4">
+                    {{form(formFizzBuzz)}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    {{fizzBuzz}}
+                </div>
+            </div>
+        </div>
+    </div>
 
 {% endblock %}

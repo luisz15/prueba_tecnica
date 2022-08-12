@@ -28,11 +28,15 @@
    ```sh
    composer install
    ```
-5. Abrir un nuevo puerto en `httpd.conf` para el VirtualHost
+5. Ejecuta la migracion de MySQL
+   ```sh
+   php bin/console doctrine:migration:migrate
+   ```
+6. Abrir un nuevo puerto en `httpd.conf` para el VirtualHost
    ```sh
    Listen 8081
    ```
-6. Agrega el VirtualHost a `httpd.conf` para configurar un enrutado mas limpio 
+7. Agrega el VirtualHost a `httpd.conf` para configurar un enrutado mas limpio 
    * cambiar `/usr/local/var/www` por el `DocumentRoot` definido en `httpd.conf`
    ```sh
    <VirtualHost *:8081>
